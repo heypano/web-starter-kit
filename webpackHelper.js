@@ -167,10 +167,16 @@ export function getRules(environment) {
                     }
                 },
                 {
-                    loader: "postcss-loader"
+                    loader: "postcss-loader",
+                    options: {
+                        sourceMap: true
+                    }
                 },
                 {
-                    loader: "sass-loader"
+                    loader: "sass-loader",
+                    options: {
+                        sourceMap: true
+                    }
                 }
             ]
         },
